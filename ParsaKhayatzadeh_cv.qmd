@@ -72,9 +72,9 @@ tibble::tribble(
     "Teaching Assistant", "Cornell University", "Aug. 2024 - Dec. 2024", "",c("Professor: Natalie Cápiro","Engineering Processes for Environmental Sustainability"),
 
     "Teaching Assistant", "University of Tehran", "Aug. 2019 - Jul. 2022",
-    "", c("Courses: Simulation Principles \\textbullet\\Probability and Applications\\textbullet\\Microeconomics\\textbullet\\Macroeconomics\\textbullet\\System Analytics", "Analyses of large scale and unstructured data sets with R, Python and Bash"),
+    "", c("Courses: Simulation Principles \\textbullet\\Probability and Applications\\textbullet\\Microeconomics\\textbullet\\Macroeconomics\\textbullet\\System Analytics"),
 
-    "Post Doctoral Researcher", "ETH Zurich", "Nov. 2017 - Aug. 2018", "Chair of Social Networks", c("Developing new methods to analyze social networks", "Implementing methods in libraries", "Gathering and analyzing large datsets from Social Media APIs"),
+    "Board Member", "Scientific Association of Industrial Engineering, University of Tehran (UTIESA)", "Aug. 2019 - Jul. 2021", "", c("Developing new methods to analyze social networks", "Implementing methods in libraries", "Gathering and analyzing large datsets from Social Media APIs"),
 
 ) |>
     cvevents(when = "dates", what = "role", where = "institution", details = "tasks")
