@@ -53,10 +53,11 @@ I have started my Ph.D. at Cornell as a Systems Engineering student under the su
 #| output: asis
 tibble::tribble(
     ~degree, ~uni, ~loc, ~dates, ~details,
-    "Ph.D. in Systems Engineering", "Cornell University", "Ithaca, NY", "Aug. 2023 - Current", c("Area: Computational Sustainability"),
-    "B.Sc. in Industrial Engineering", "University of Tehran", "Tehran, Iran", "Aug. 2018 - Jul. 2022", c("Thesis: PV vs. CSP: a solar renewable technology review and electricity cost analysis based on improvised LCOE", "Course Highlights: Operations Research • System Analysis • Engineering Statistics • Fundamentals of Probability • Microeconomic Theory • Macroeconomics • Statistical Quality Control • Decision Analysis")
+    "Ph.D. in Systems Engineering", "Cornell University", "Ithaca, NY", "Aug. 2023 - Current", list("Area: Computational Sustainability"),
+    "B.Sc. in Industrial Engineering", "University of Tehran", "Tehran, Iran", "Aug. 2018 - Jul. 2022", list("Thesis: PV vs. CSP: a solar renewable technology review and electricity cost analysis based on improvised LCOE", "Course Highlights: Operations Research \\textbullet\\ System Analysis \\textbullet\\ Engineering Statistics \\textbullet\\ Fundamentals of Probability \\textbullet\\ Microeconomic Theory \\textbullet\\ Macroeconomics \\textbullet\\ Statistical Quality Control \\textbullet\\ Decision Analysis")
 ) |>
     cvevents(when = "dates", what = "degree", where = "loc", details = "details")
+
 ```
 
 
@@ -68,17 +69,13 @@ tibble::tribble(
 #| output: asis
 tibble::tribble(
     ~role, ~institution, ~dates, ~details, ~tasks,
-    "Teaching Assistant", "GESIS - Leibniz Institute for the Social Sciences", "Mar. 2022 - Present",
-    "Transparent Social Analytics, Department of Computational Social Science", c("Coordination of a project to build an Open Science platform with reusable code and tutorials", "Research on Open Science Practices", "Implementation of tools to enhance reproducibility and facilitate research with digital data in R"),
+    "Teaching Assistant", "Cornell University", "Aug. 2024 - Dec. 2024", "",c("Professor: Natalie Cápiro","Engineering Processes for Environmental Sustainability"),
 
-    "Presidential Fellow", "University of Manchester", "Sep. 2018 - Feb. 2022",
-    "Sociology Department", c("Research on Disinformation on Social Media", "Analyses of large scale and unstructured data sets with R, Python and Bash"),
+    "Teaching Assistant", "University of Tehran", "Aug. 2019 - Jul. 2022",
+    "", c("Courses: Simulation Principles \\textbullet\\Probability and Applications\\textbullet\\Microeconomics\\textbullet\\Macroeconomics\\textbullet\\System Analytics", "Analyses of large scale and unstructured data sets with R, Python and Bash"),
 
     "Post Doctoral Researcher", "ETH Zurich", "Nov. 2017 - Aug. 2018", "Chair of Social Networks", c("Developing new methods to analyze social networks", "Implementing methods in libraries", "Gathering and analyzing large datsets from Social Media APIs"),
 
-    "Post Doctoral Researcher", "University of Konstanz", "Oct. 2015 - Oct. 2017", "Department of Computer & Information Science", c("Developing new methods to analyze social networks", "Implementing methods in libraries", "Webscraping and harmonizing a large corpus of football data"),
-
-    "Ph.D. Candidate", "University of Konstanz", "Nov. 2012 - Sep. 2015", "Department of Computer & Information Science", c("Developing new methods to analyze social networks", "Implementing methods in libraries")
 ) |>
     cvevents(when = "dates", what = "role", where = "institution", details = "tasks")
 ```
