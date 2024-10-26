@@ -1,6 +1,6 @@
 ---
 author: Parsa Khayatzadeh
-title: Systems Engineering Ph.D. student @ Cornell 
+title: pk525@cornell.edu
 format:
   classic-cv-pdf: default
 cvfooter:
@@ -9,17 +9,15 @@ cvfooter:
 cvcolor: 58748F #without `#`
 cvfont: raleway #texlive fonts like raleway,fetamont,gillius,comfortaa
 cvmeta:
-  - title: Ph.D. Student
-    left: Systems Engineering, Cornell University
+  - title: Ph.D. Student in Systems Engineering, Cornell University
     right: Ithaca, NY
   - title: "Supervisior:"
     left: Prof. Michael Charles
   - title: Research Area
     left: Computational Sustainability
-    right: mr.schochastics.net
+    right: parsakhay.com/research
   - title: Techs
     left: IAMs, Human-Earth Systems, Julia, R
-    right: pk525@cornell.edu
 execute:
   echo: false
 ---
@@ -54,14 +52,14 @@ I have started my Ph.D. at Cornell as a Systems Engineering student under the su
 tibble::tribble(
     ~degree, ~uni, ~loc, ~dates, ~details,
     "Ph.D. in Systems Engineering", "Cornell University", "Ithaca, NY", "Aug. 2023 - Current", list("Area: Computational Sustainability"),
-    "B.Sc. in Industrial Engineering", "University of Tehran", "Tehran, Iran", "Aug. 2018 - Jul. 2022", list("Thesis: PV vs. CSP: a solar renewable technology review and electricity cost analysis based on improvised LCOE", "Course Highlights: Operations Research \\textbullet\\ System Analysis \\textbullet\\ Engineering Statistics \\textbullet\\ Fundamentals of Probability \\textbullet\\ Microeconomic Theory \\textbullet\\ Macroeconomics \\textbullet\\ Statistical Quality Control \\textbullet\\ Decision Analysis")
+    "B.Sc. in Industrial Engineering", "University of Tehran", "Tehran, Iran", "Aug. 2018 - Jul. 2022", list("Thesis: PV vs. CSP: a solar renewable technology review and electricity cost analysis based on improvised LCOE", "Course Highlights: Operations Research  -  System Analysis  -  Engineering Statistics  -  Fundamentals of Probability  -  Microeconomic Theory  -  Macroeconomics  -  Statistical Quality Control  -  Decision Analysis")
 ) |>
     cvevents(when = "dates", what = "degree", where = "loc", details = "details")
 
 ```
 
 
-# Experience
+# Academic Experience
 
 
 ```{r}
@@ -72,9 +70,23 @@ tibble::tribble(
     "Teaching Assistant", "Cornell University", "Aug. 2024 - Dec. 2024", "",c("Professor: Natalie Cápiro","Engineering Processes for Environmental Sustainability"),
 
     "Teaching Assistant", "University of Tehran", "Aug. 2019 - Jul. 2022",
-    "", c("Courses: Simulation Principles \\textbullet\\Probability and Applications\\textbullet\\Microeconomics\\textbullet\\Macroeconomics\\textbullet\\System Analytics"),
+    "", list("Courses: Simulation Principles  - Probability and Applications - Microeconomics - Macroeconomics - System Analytics"),
 
-    "Board Member", "Scientific Association of Industrial Engineering, University of Tehran (UTIESA)", "Aug. 2019 - Jul. 2021", "", c("Developing new methods to analyze social networks", "Implementing methods in libraries", "Gathering and analyzing large datsets from Social Media APIs"),
+    "Board Member", "Scientific Association of Industrial Engineering, University of Tehran (UTIESA)", "Aug. 2019 - Jul. 2021", "", list("Developing new methods to analyze social networks", "Implementing methods in libraries", "Gathering and analyzing large datsets from Social Media APIs"),
+
+) |>
+    cvevents(when = "dates", what = "role", where = "institution", details = "tasks")
+```
+
+# Extracurricular Activities
+
+
+```{r}
+#| label: Extracurricular Activities
+#| output: asis
+tibble::tribble(
+    ~role, ~institution, ~dates, ~details, ~tasks,
+    "University of Tehran", "", "Aug. 2019 - Jul. 2021", "", c("Board Member of Scientific  Association of Industrial Engineering at University of Tehran (UTIESA)", "Managing Editor of Fankaav Stident Journal","Award: Harekat, University's best student journal in 2022")
 
 ) |>
     cvevents(when = "dates", what = "role", where = "institution", details = "tasks")
