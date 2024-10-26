@@ -23,10 +23,7 @@ website:
         href: https://linkedin.com/in/khayatzadeh
       - icon: github
         href: https://github.com/parsakhay
-format:
-  html:
-    theme: cosmo
-    css: styles.css
-
+format: html
+    
 
 

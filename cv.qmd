@@ -12,6 +12,8 @@ cvmeta:
   - title: Ph.D. Student
     left: Systems Engineering, Cornell University
     right: Ithaca, NY
+  - title: "Supervisior:"
+    left: Prof. Michael Charles
   - title: Research Area
     left: Computational Sustainability
     right: mr.schochastics.net
@@ -43,6 +45,7 @@ cvevents <- function(tbl, when, what, where, details) {
 # Summary
 
 I have started my Ph.D. at Cornell as a Systems Engineering student under the supervision of Prof. Michael Charles. I am interested in design aspect of human-earth models. I link different modules of the system to provide a narrative of plausible futures of the world. My current research focuses on the downscaled study of IAMs aimed to serve tribal governed communities and my case study is Navajo Nation.  
+
 # Experience
 
 
