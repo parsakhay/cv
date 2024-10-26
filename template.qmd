@@ -1,23 +1,23 @@
 ---
-author: David Schoch
-title: R Developer
+author: Parsa Khayatzadeh
+title: Systems Engineering Ph.D. student @ Cornell 
 format:
   classic-cv-pdf: default
 cvfooter:
-  left: "mr.schochastics.net"
-  right: "github.com/schochastics"
+  left: "parsakhay.com"
+  right: "github.com/parsakhay"
 cvcolor: 58748F #without `#`
 cvfont: raleway #texlive fonts like raleway,fetamont,gillius,comfortaa
 cvmeta:
-  - title: Status
-    left: Team Lead for Transparent Social Analytics, GESIS
-    right: Cologne, Germany
-  - title: Field
-    left: Software Engineering, Data Science
+  - title: Ph.D. Student
+    left: Systems Engineering, Cornell University
+    right: Ithaca, NY
+  - title: Research Area
+    left: Computational Sustainability
     right: mr.schochastics.net
   - title: Techs
-    left: R, bash, Python, javascript, Lua
-    right: david@schochastics.net
+    left: IAMs, Human-Earth Systems, Julia, R
+    right: pk525@cornell.edu
 execute:
   echo: false
 ---
@@ -42,8 +42,7 @@ cvevents <- function(tbl, when, what, where, details) {
 
 # Summary
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-
+I have started my Ph.D. at Cornell as a Systems Engineering student under the supervision of Prof. Michael Charles. I am interested in design aspect of human-earth models. I link different modules of the system to provide a narrative of plausible futures of the world. My current research focuses on the downscaled study of IAMs aimed to serve tribal governed communities and my case study is Navajo Nation.  
 # Experience
 
 
@@ -70,8 +69,8 @@ tibble::tribble(
 #| output: asis
 tibble::tribble(
     ~degree, ~uni, ~loc, ~dates, ~details,
-    "Ph.D. in Computer Science", "University of Konstanz", "Konstanz, Germany", "Nov. 2012 - Sep. 2015", c("Thesis: A Positional Approach for Network Centrality", "Developed and implemented new methods to assess network centrality"),
-    "Diploma in Business Mathematics", "KIT", "Karlsruhe, Germany", "Sep. 2006 - Jul. 2012", c("Thesis: Modularity Maximization", "Implementation and comparison of different clustering algorithms using Matlab")
+    "Ph.D. in Systems Engineering", "Cornell University", "Ithaca, NY", "Aug. 2023 - Current", c("Thesis: A Positional Approach for Network Centrality", "Developed and implemented new methods to assess network centrality"),
+    "B.Sc. in Industrial Engineering", "University of Tehran", "Tehran, Iran", "Aug. 2018 - Jul. 2022", c("Thesis: PV vs. CSP: a solar renewable technology review and electricity cost analysis based on improvised LCOE", "Implementation and comparison of different clustering algorithms using Matlab")
 ) |>
     cvevents(when = "dates", what = "degree", where = "loc", details = "details")
 ```

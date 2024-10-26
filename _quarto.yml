@@ -1,0 +1,32 @@
+project:
+  type: website
+  output-dir: docs
+website:
+  favicon: favicon.svg
+  title: "Parsa's Personal Webpage"
+  navbar:
+    left: 
+      - text: About me
+        href: about-me.qmd
+        icon: person-circle
+      - text: Research
+        href: research.qmd
+        icon: bi-globe
+      - text: Notes
+        icon: bi-journals
+        href: notes.qmd
+    right:
+      - icon: bi-chat-dots
+        text: Contact me!
+        href: contact.qmd
+      - icon: linkedin
+        href: https://linkedin.com/in/khayatzadeh
+      - icon: github
+        href: https://github.com/parsakhay
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+
+
+
