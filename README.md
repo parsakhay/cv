@@ -1,17 +1,4 @@
-# classic-cv format
+I have used Quarto to create this CV. Thanks to David Schoch. 
 
-A template to create a cv/resume with Quarto.  
-(This template was adopted from the [LaTex CV and Resume Collection](https://github.com/jankapunkt/latexcv))
-
-![](classic-cv.png)
-
-## Installing
-
-```bash
-quarto use template schochastics/classic-cv
-```
-This will install the extension and create an example qmd file that you can use as a starting place for your cv.
-
-## Format Options
-
-see the template for all possible format options
+\Credit: 
+Schoch, David. 2023. “Create a CV with Quarto.” July 17, 2023. http://blog.schochastics.net/posts/2023-07-17_create-a-cv-with-quarto.
