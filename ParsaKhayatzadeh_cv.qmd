@@ -3,6 +3,7 @@ author: Parsa Khayatzadeh
 title: Systems Engineering Ph.D. student @ Cornell 
 format:
   classic-cv-pdf: default
+  html: default
 cvfooter:
   left: "parsakhay.com"
   right: "github.com/parsakhay"
