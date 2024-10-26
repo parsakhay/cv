@@ -7,5 +7,5 @@ contributes:
     pdf:
       filters: 
         - styles.lua
-      template: ParsaKhayatzadeh_CV.tex
+      template: template.tex
 

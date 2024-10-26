@@ -3,7 +3,6 @@ author: Parsa Khayatzadeh
 title: Systems Engineering Ph.D. student @ Cornell 
 format:
   classic-cv-pdf: default
-  html: default
 cvfooter:
   left: "parsakhay.com"
   right: "github.com/parsakhay"
@@ -47,6 +46,20 @@ cvevents <- function(tbl, when, what, where, details) {
 
 I have started my Ph.D. at Cornell as a Systems Engineering student under the supervision of Prof. Michael Charles. I am interested in design aspect of human-earth models. I link different modules of the system to provide a narrative of plausible futures of the world. My current research focuses on the downscaled study of IAMs aimed to serve tribal governed communities and my case study is Navajo Nation.  
 
+# Education
+
+```{r }
+#| label: education
+#| output: asis
+tibble::tribble(
+    ~degree, ~uni, ~loc, ~dates, ~details,
+    "Ph.D. in Systems Engineering", "Cornell University", "Ithaca, NY", "Aug. 2023 - Current", c("Area: Computational Sustainability"),
+    "B.Sc. in Industrial Engineering", "University of Tehran", "Tehran, Iran", "Aug. 2018 - Jul. 2022", c("Thesis: PV vs. CSP: a solar renewable technology review and electricity cost analysis based on improvised LCOE", "Course Highlights: Operations Research • System Analysis • Engineering Statistics • Fundamentals of Probability • Microeconomic Theory • Macroeconomics • Statistical Quality Control • Decision Analysis")
+) |>
+    cvevents(when = "dates", what = "degree", where = "loc", details = "details")
+```
+
+
 # Experience
 
 
@@ -55,26 +68,17 @@ I have started my Ph.D. at Cornell as a Systems Engineering student under the su
 #| output: asis
 tibble::tribble(
     ~role, ~institution, ~dates, ~details, ~tasks,
-    "Team Lead", "GESIS - Leibniz Institute for the Social Sciences", "Mar. 2022 - Present",
+    "Teaching Assistant", "GESIS - Leibniz Institute for the Social Sciences", "Mar. 2022 - Present",
     "Transparent Social Analytics, Department of Computational Social Science", c("Coordination of a project to build an Open Science platform with reusable code and tutorials", "Research on Open Science Practices", "Implementation of tools to enhance reproducibility and facilitate research with digital data in R"),
+
     "Presidential Fellow", "University of Manchester", "Sep. 2018 - Feb. 2022",
     "Sociology Department", c("Research on Disinformation on Social Media", "Analyses of large scale and unstructured data sets with R, Python and Bash"),
+
     "Post Doctoral Researcher", "ETH Zurich", "Nov. 2017 - Aug. 2018", "Chair of Social Networks", c("Developing new methods to analyze social networks", "Implementing methods in libraries", "Gathering and analyzing large datsets from Social Media APIs"),
+
     "Post Doctoral Researcher", "University of Konstanz", "Oct. 2015 - Oct. 2017", "Department of Computer & Information Science", c("Developing new methods to analyze social networks", "Implementing methods in libraries", "Webscraping and harmonizing a large corpus of football data"),
+
     "Ph.D. Candidate", "University of Konstanz", "Nov. 2012 - Sep. 2015", "Department of Computer & Information Science", c("Developing new methods to analyze social networks", "Implementing methods in libraries")
 ) |>
     cvevents(when = "dates", what = "role", where = "institution", details = "tasks")
-```
-
-# Education
-
-```{r }
-#| label: education
-#| output: asis
-tibble::tribble(
-    ~degree, ~uni, ~loc, ~dates, ~details,
-    "Ph.D. in Systems Engineering", "Cornell University", "Ithaca, NY", "Aug. 2023 - Current", c("Thesis: A Positional Approach for Network Centrality", "Developed and implemented new methods to assess network centrality"),
-    "B.Sc. in Industrial Engineering", "University of Tehran", "Tehran, Iran", "Aug. 2018 - Jul. 2022", c("Thesis: PV vs. CSP: a solar renewable technology review and electricity cost analysis based on improvised LCOE", "Implementation and comparison of different clustering algorithms using Matlab")
-) |>
-    cvevents(when = "dates", what = "degree", where = "loc", details = "details")
 ```
