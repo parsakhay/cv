@@ -7,17 +7,18 @@ cvfooter:
   left: "parsakhay.com"
   right: "github.com/parsakhay"
 cvcolor: 58748F #without `#`
-cvfont: raleway #texlive fonts like raleway,fetamont,gillius,comfortaa
+cvfont: comfortaa #texlive fonts like raleway,fetamont,gillius,comfortaa
 cvmeta:
-  - title: Ph.D. Student in Systems Engineering, Cornell University
+  - title: Position
+    left: Ph.D. Student in Systems Engineering, Cornell University
     right: Ithaca, NY
   - title: Supervisior
     left: Prof. Michael Charles
   - title: Research Area
     left: Computational Sustainability
     right: parsakhay.com/research
-  - title: Methods and Skils
-    left: IAMs, Human-Earth Systems, Julia, R
+  - title: Research Interset
+    left: IAMs, Human-Earth Systems, Shared Socioeconomic Pathways, Sustainable Computing 
 execute:
   echo: false
 ---
@@ -53,7 +54,7 @@ tibble::tribble(
     ~degree, ~uni, ~loc, ~dates, ~details,
     "Ph.D. in Systems Engineering", "Cornell University", "Ithaca, NY", "Aug. 2023 - Present", list("Area: Computational Sustainability","Advisor: Prof. Michael Charles"),
 
-    "B.Sc. in Industrial Engineering", "University of Tehran", "Tehran, Iran", "Aug. 2018 - Jul. 2022", list("Thesis: PV vs. CSP: a solar renewable technology review and electricity cost analysis based on improvised LCOE", "Course Highlights: Operations Research  -  System Analysis  -  Engineering Statistics  -  Fundamentals of Probability  -  Microeconomic Theory  -  Macroeconomics  -  Statistical Quality Control  -  Decision Analysis")
+    "B.Sc. in Industrial Engineering", "University of Tehran", "Tehran, Iran", "Aug. 2018 - Jul. 2022", list("Advisor: Prof. Hossein Iranmanesh","Final Project: PV vs. CSP: a solar renewable technology review and electricity cost analysis based on improvised LCOE", "Course Highlights: Operations Research  -  System Analysis  -  Engineering Statistics  -  Fundamentals of Probability  -  Microeconomic Theory  -  Macroeconomics  -  Statistical Quality Control  -  Decision Analysis")
 ) |>
     cvevents(when = "dates", what = "degree", where = "loc", details = "details")
 
@@ -68,8 +69,7 @@ tibble::tribble(
 #| output: asis
 tibble::tribble(
     ~role, ~institution, ~dates, ~details, ~tasks,
-    "Research Assistant", "Cornell University", "Aug. 2023 - Present", "",c("Professor: Michael Charles",""),
-
+    "Research Assistant", "Cornell University", "Aug. 2023 - Present", "",c("Advisor: Michael Charles","Downscaled Integrated Assessment models"),
 
     "Teaching Assistant", "Cornell University", "Aug. 2024 - Dec. 2024", "",c("Professor: Natalie Cápiro","Engineering Processes for Environmental Sustainability"),
 
@@ -77,7 +77,7 @@ tibble::tribble(
     "", list("Courses: Simulation Principles  - Probability and Applications - Microeconomics - Macroeconomics - System Analytics"),
 
    "Summer Research Intern", "UT's Research Institute for Energy Management and Planning", "Aug. 2021 - Jul. 2022",
-    "", list(),
+    "", list("A feasibility study of solar technologies with a focus on CSP technologies | Supervisor: Dr. Hossein Iranmanesh"),
 
 ) |>
     cvevents(when = "dates", what = "role", where = "institution", details = "tasks")
@@ -85,13 +85,12 @@ tibble::tribble(
 
 # Extracurricular Activities
 
-
 ```{r}
 #| label: Extracurricular Activities
 #| output: asis
 tibble::tribble(
     ~role, ~institution, ~dates, ~details, ~tasks,
-    "University of Tehran", "", "Aug. 2019 - Jul. 2021", "", c("Board Member of Scientific  Association of Industrial Engineering at University of Tehran (UTIESA)", "Managing Editor of Fankaav Stident Journal","Award: Harekat, University's best student journal in 2022")
+    "Scientific  Association of Industrial Engineering at University of Tehran", "UTIESA", "Aug. 2019 - Jul. 2021", "", c("Board Member", "Managing Editor of Fankaav Stident Journal","Award: Harekat, University's best student journal in 2022")
 
 ) |>
     cvevents(when = "dates", what = "role", where = "institution", details = "tasks")
