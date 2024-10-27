@@ -11,12 +11,12 @@ cvfont: raleway #texlive fonts like raleway,fetamont,gillius,comfortaa
 cvmeta:
   - title: Ph.D. Student in Systems Engineering, Cornell University
     right: Ithaca, NY
-  - title: "Supervisior:"
+  - title: Supervisior
     left: Prof. Michael Charles
   - title: Research Area
     left: Computational Sustainability
     right: parsakhay.com/research
-  - title: Techs
+  - title: Methods and Skils
     left: IAMs, Human-Earth Systems, Julia, R
 execute:
   echo: false
@@ -51,7 +51,8 @@ I have started my Ph.D. at Cornell as a Systems Engineering student under the su
 #| output: asis
 tibble::tribble(
     ~degree, ~uni, ~loc, ~dates, ~details,
-    "Ph.D. in Systems Engineering", "Cornell University", "Ithaca, NY", "Aug. 2023 - Current", list("Area: Computational Sustainability"),
+    "Ph.D. in Systems Engineering", "Cornell University", "Ithaca, NY", "Aug. 2023 - Present", list("Area: Computational Sustainability","Advisor: Prof. Michael Charles"),
+
     "B.Sc. in Industrial Engineering", "University of Tehran", "Tehran, Iran", "Aug. 2018 - Jul. 2022", list("Thesis: PV vs. CSP: a solar renewable technology review and electricity cost analysis based on improvised LCOE", "Course Highlights: Operations Research  -  System Analysis  -  Engineering Statistics  -  Fundamentals of Probability  -  Microeconomic Theory  -  Macroeconomics  -  Statistical Quality Control  -  Decision Analysis")
 ) |>
     cvevents(when = "dates", what = "degree", where = "loc", details = "details")
@@ -67,12 +68,16 @@ tibble::tribble(
 #| output: asis
 tibble::tribble(
     ~role, ~institution, ~dates, ~details, ~tasks,
+    "Research Assistant", "Cornell University", "Aug. 2023 - Present", "",c("Professor: Michael Charles",""),
+
+
     "Teaching Assistant", "Cornell University", "Aug. 2024 - Dec. 2024", "",c("Professor: Natalie Cápiro","Engineering Processes for Environmental Sustainability"),
 
     "Teaching Assistant", "University of Tehran", "Aug. 2019 - Jul. 2022",
     "", list("Courses: Simulation Principles  - Probability and Applications - Microeconomics - Macroeconomics - System Analytics"),
 
-    "Board Member", "Scientific Association of Industrial Engineering, University of Tehran (UTIESA)", "Aug. 2019 - Jul. 2021", "", list("Developing new methods to analyze social networks", "Implementing methods in libraries", "Gathering and analyzing large datsets from Social Media APIs"),
+   "Summer Research Intern", "UT's Research Institute for Energy Management and Planning", "Aug. 2021 - Jul. 2022",
+    "", list(),
 
 ) |>
     cvevents(when = "dates", what = "role", where = "institution", details = "tasks")
